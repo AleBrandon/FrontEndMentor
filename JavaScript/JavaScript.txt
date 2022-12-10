@@ -1,0 +1,34 @@
+window.alert =>> abre uma janela alerta
+window.prompt =>>> Abre uma janela que pode digitar dentro dela
+window.comfirm
+
+Obs DevTools só consegue verificar se a erros no JavaScript. 
+HTML e CSS são ignorados pelo navegador.
+
+button onclick="clique()"
+button tag
+onclick parametro
+"clique()" Nome do evento
+
+<button onclick="clique()">Clique em mim</button>
+    <script>
+        function clique() {
+            window.alert('Você clicou')
+            
+        }
+    </script>
+
+O evento onclick executa determinada funcionalidade quando um botão é clicado.
+
+<button onclick="inicio()">Vamos começar?</button>
+
+   <script>
+    function inicio() {
+        let name = window.prompt('Qual é o seu nome please?')
+        window.alert(`Ola ${name} é um prazer te conhecer.`)
+        
+    }
+   </script>
+
+
+
