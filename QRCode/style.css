@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap'); 
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh; /*Minimo de 100% da VH...do Tamanho da tela.*/
+    display: flex; /*Itens podem ficar um do lado do outro, e tb libera o estilo align- itens consiga ficar no meio Logo abaixo.*/
+    align-items: center; /*Colocou a imagem no centro da tela*/
+    font-size: 15px;
+}
+
+.container{
+    max-width: 360px; /*Maximo da largura do container*/
+    margin: auto; /*Imagem foi para o meio*/
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 18px; /*Borda interna*/
+    border-radius: 17px; /*Bordas circulares*/
+    text-align: center;
+    margin: 0 1em; /*Diminue a largura do projeto*/
+}
+
+.card img{
+    width: 100%; /*A imagem Ultilizou 100% do espaço que tinha, referente ao container*/
+    border-radius: 12px; /*Bordas circulares*/
+}
+
+.text{
+    padding: 22px 10px;
+}
+
+.text h2{
+    color: hsl(218, 44%, 22%);
+    padding-bottom: 15px;
+}
+
+.text p{
+    color: hsl(220, 15%, 55%);
+}
+    
