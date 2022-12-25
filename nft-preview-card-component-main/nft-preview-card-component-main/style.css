@@ -17,7 +17,7 @@ body{
     
 }
 
-.card_container{
+.container{
     padding: 15px;
     margin: 0 auto;
     background-color: #0c1729;
@@ -28,21 +28,21 @@ body{
     color: white;
 }
 
-.card{
+.caixa{
     background-color: hsl(216, 50%, 16%);
     max-width: 340px;
     padding: 25px;
     border-radius: 10px;
 }
 
-.image_container{
+.img_main{
     width: 100%;
     cursor: pointer;
     position: relative;
     height: 300px;
 }
 
-.image_overlay{
+.img_sobre{
     position: absolute;
     top: 0;
     left: 0;
@@ -55,26 +55,26 @@ body{
     
 }
 
-.image_overlay img{
+.img_sobre img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.image_container:hover .image_overlay{
+.img_main:hover .img_sobre{
     opacity: 1;
     
 }
 
-.card .image_container > img{
+.caixa .img_main > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.card > p{
+.caixa > p{
     color: hsl(215, 51%, 70%);
     font-size: 18px;
 }
@@ -83,7 +83,7 @@ h2{
     margin: 15px 0;
 }
 
-.info{
+.caixa_info{
     display: flex;
     justify-content: space-between; /*Espaçamento*/
     align-items: center;
@@ -92,7 +92,7 @@ h2{
     width: 100%;
 }
 
-.price{
+.preco{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,27 +101,27 @@ h2{
     font-weight: 600;
 }
 
-.time_left{
+.tempo{
     display: flex;
     align-items: center;
     gap: 7px;
     color: hsl(215, 51%, 70%);
 }
 
-.eth_container,
-.clock_container{
+.eth,
+.relogio{
     display: flex;
     justify-content: center;
 }
 
-.line{
+.linha{
     background-color: hsl(215, 32%, 27%);
     height: 1px;
     width: 100%;
 
 }
 
-.author{
+.autor{
     margin-top: 15px;
     display: flex;
     justify-content: flex-start;
@@ -130,7 +130,7 @@ h2{
 
 }
 
-.author .avatar_container{
+.autor .perfil{
     height: 35px;
     width: 35px;
     border-radius: 50%;
@@ -138,22 +138,22 @@ h2{
     border: 1px solid white;
 }
 
-.author .avatar_container img{
+.autor .perfil img{
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.author p {
+.autor p {
     color: hsl(215, 51%, 70%);
 
 }
 
-.author .name{
+.autor .nome{
     color: white;
     cursor: pointer;
 }
 
-.author .name:hover{
+.autor .nome:hover{
     color: hsl(178, 100%, 50%);
 }
