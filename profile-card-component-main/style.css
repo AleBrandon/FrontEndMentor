@@ -17,9 +17,13 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     background-size: cover;
-    background-image: url(images/pexels-pixabay-358457.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    background: url("./images/bg-pattern-top.svg") -101px -600px no-repeat,
+    url("./images/bg-pattern-bottom.svg") 750px 550px no-repeat,
+    radial-gradient(
+      circle at 0% 61%,
+      rgba(38, 180, 190, 1) 0%,
+      rgba(26, 161, 173, 1) 100%
+    );
     
 }
 
