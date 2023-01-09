@@ -1,0 +1,58 @@
+.billing{
+    text-align: center;
+    margin-top: 50px;
+}
+.billing p{
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.billing p.discount{
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    font-size: 11px;
+    border-radius: 10px;
+
+}
+
+
+.switch input{ /*Faz sumi a caixa de marcação, mas depois aparece diferente, com os estilos abaixo.*/
+    opacity: 0;
+}
+
+.switch{
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    position: relative;
+}
+
+
+
+.toggle-slider{ /*Aqui a caixa de marcação aparece tipo slider)*/
+    position: absolute;
+    background-color: hsl(223, 50%, 87%);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+    transition: all .2s ease;
+
+}
+
+
+.ponto::before {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    background-color: #FFF;
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    top: 3px;
+    transition: all 4s ease-in-out;
+}
+.toggle-slider:hover{
+    background-color: hsl(174, 86%, 45%);
+}
